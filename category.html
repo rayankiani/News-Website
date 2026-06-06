@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>World — RAK News</title>
+  <meta name="description" content="World news coverage from RAK News: politics, conflict, diplomacy and analysis from every continent." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Barlow+Condensed:wght@600;700&family=Source+Serif+4:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="category">
+
+  <div class="progress-bar"></div>
+
+  <div class="utility-bar">
+    <div class="utility-inner">
+      <div class="utility-links">
+        <a href="world.html">World</a><a href="politics.html">Politics</a><a href="business.html">Business</a><a href="tech.html">Tech</a><a href="culture.html">Culture</a>
+      </div>
+      <div class="utility-right"><a href="#">Sign In</a><a href="#">Subscribe</a></div>
+    </div>
+  </div>
+
+  <header class="masthead">
+    <div class="masthead-inner">
+      <a href="index.html" class="logo"><span class="logo-badge">R</span>RAK<span class="dot">.</span>News</a>
+      <div class="masthead-meta"><span data-date></span><span>•</span> Global Edition</div>
+    </div>
+  </header>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="world.html" class="active">World</a></li>
+        <li><a href="politics.html">Politics</a></li>
+        <li><a href="business.html">Business</a></li>
+        <li><a href="tech.html">Tech</a></li>
+        <li><a href="culture.html">Culture</a></li>
+        <li><a href="opinion.html">Opinion</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="icon-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></button>
+        <button class="hamburger"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Category hero -->
+  <section class="cat-hero">
+    <div class="cat-hero-inner">
+      <h1>World</h1>
+      <p>Coverage from every continent — diplomacy, conflict, society and the forces shaping our shared future.</p>
+      <span class="cat-count">2,847 Articles</span>
+    </div>
+  </section>
+
+  <!-- Filter bar -->
+  <div class="filter-bar">
+    <div class="filter-inner">
+      <label for="sort">Sort by</label>
+      <select id="sort">
+        <option>Latest</option>
+        <option>Most Read</option>
+        <option>Oldest</option>
+      </select>
+      <label for="from">From</label>
+      <input id="from" type="date" />
+      <label for="to">To</label>
+      <input id="to" type="date" />
+      <input class="filter-search" type="search" placeholder="Search in World…" />
+    </div>
+  </div>
+
+  <!-- Sub-category tabs -->
+  <div class="subcat-tabs">
+    <button class="pill active">All Topics</button>
+    <button class="pill">Europe</button>
+    <button class="pill">Americas</button>
+    <button class="pill">Asia Pacific</button>
+    <button class="pill">Africa</button>
+    <button class="pill">Middle East</button>
+    <button class="pill">Climate</button>
+    <button class="pill">Conflict</button>
+    <button class="pill">Diplomacy</button>
+    <button class="pill">Migration</button>
+  </div>
+
+  <div class="cat-layout">
+    <main>
+      <div class="masonry">
+        <article class="card"><a href="article.html" class="card-image"><div class="ph ph-1"></div></a><div class="card-body"><div class="card-label">Europe</div><h3 class="card-title"><a href="article.html">Brussels approves landmark digital sovereignty bill</a></h3><p class="card-excerpt">The legislation gives member states new tools to police cross-border data flows.</p><div class="card-meta">2h ago <span>•</span> 5 min</div></div></article>
+        <article class="card"><a href="article.html" class="card-image"><div class="ph ph-6"></div></a><div class="card-body"><div class="card-label">Climate</div><h3 class="card-title"><a href="article.html">Pacific island leaders demand seat at energy negotiations</a></h3><p class="card-excerpt">A coalition of small states is pushing for binding language on adaptation finance.</p><div class="card-meta">3h ago <span>•</span> 7 min</div></div></article>
+        <article class="card"><a href="article.html" class="card-image"><div class="ph ph-3"></div></a><div class="card-body"><div class="card-label">Asia Pacific</div><h3 class="card-title"><a href="article.html">Regional summit concludes with new trade corridor framework</a></h3><p class="card-excerpt">Member nations expect the corridor to reduce shipping times by up to thirty percent.</p><div class="card-meta">5h ago <span>•</span> 6 min</div></div></article>
+        <article class="card"><a href="article.html" class="card-image"><div class="ph ph-8"></div></a><div class="card-body"><div class="card-label">Americas</div><h3 class="card-title"><a href="article.html">Mexico City unveils ambitious public transit overhaul</a></h3><p class="card-excerpt">The ten-year plan adds 280km of bus rapid transit and three new metro lines.</p><div class="card-meta">6h ago <span>•</span> 4 min</div></div></article>
+        <article class="card"><a href="article.html" class="card-image"><div class="ph ph-4"></div></a><div class="card-body"><div class="card-label">Africa</div><h3 class="card-title"><a href="article.html">Continental free trade area marks fifth year with record volumes</a></h3><p class="card-excerpt">Intra-African trade has more than doubled since the agreement took effect.</p><div class="card-meta">8h ago <span>•</span> 6 min</div></div></article>
+        <article class="card"><a href="article.html" class="card-image"><div class="ph ph-9"></div></a><div class="card-body"><div class="card-label">Middle East</div><h3 class="card-title"><a href="article.html">Gulf states accelerate move away from oil revenues</a></h3><p class="card-excerpt">Sovereign wealth funds are pouring capital into AI, biotech and tourism.</p><div class="card-meta">10h ago <span>•</span> 7 min</div></div></article>
+        <article class="card"><a href="article.html" class="card-image"><div class="ph ph-2"></div></a><div class="card-body"><div class="card-label">Diplomacy</div><h3 class="card-title"><a href="article.html">Ambassadors return after months of frozen relations</a></h3><p class="card-excerpt">The thaw follows back-channel talks brokered by a third party.</p><div class="card-meta">12h ago <span>•</span> 5 min</div></div></article>
+        <article class="card"><a href="article.html" class="card-image"><div class="ph ph-5"></div></a><div class="card-body"><div class="card-label">Migration</div><h3 class="card-title"><a href="article.html">European court rulings reshape asylum procedure across union</a></h3><p class="card-excerpt">Member states must rewrite domestic policies within twelve months.</p><div class="card-meta">14h ago <span>•</span> 8 min</div></div></article>
+        <article class="card"><a href="article.html" class="card-image"><div class="ph ph-7"></div></a><div class="card-body"><div class="card-label">Europe</div><h3 class="card-title"><a href="article.html">Nordic alliance expands cooperation on energy grid</a></h3><p class="card-excerpt">Cross-border transmission capacity will triple by 2030 under the new plan.</p><div class="card-meta">18h ago <span>•</span> 5 min</div></div></article>
+      </div>
+
+      <div class="load-more-wrap">
+        <button class="load-more"><span class="spinner"></span>Load More Stories</button>
+      </div>
+    </main>
+
+    <aside class="sidebar">
+      <div>
+        <h2 class="section-heading">Most Popular</h2>
+        <ul class="trending-list">
+          <li class="trending-item"><div class="trending-num">01</div><div class="trending-content"><h4><a href="article.html">Geneva accord lands after marathon negotiations</a></h4><p>Climate · 2h ago</p></div></li>
+          <li class="trending-item"><div class="trending-num">02</div><div class="trending-content"><h4><a href="article.html">Brussels digital sovereignty bill passes by narrow margin</a></h4><p>Europe · 4h ago</p></div></li>
+          <li class="trending-item"><div class="trending-num">03</div><div class="trending-content"><h4><a href="article.html">Pacific leaders demand stronger adaptation language</a></h4><p>Climate · 6h ago</p></div></li>
+          <li class="trending-item"><div class="trending-num">04</div><div class="trending-content"><h4><a href="article.html">Asia Pacific trade corridor reshapes shipping</a></h4><p>Asia · 8h ago</p></div></li>
+          <li class="trending-item"><div class="trending-num">05</div><div class="trending-content"><h4><a href="article.html">Continental free trade area marks five years</a></h4><p>Africa · 10h ago</p></div></li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="section-heading">Trending Tags</h2>
+        <div class="tag-cloud">
+          <span class="tag">Climate</span><span class="tag">Geneva</span><span class="tag">Trade</span>
+          <span class="tag">Diplomacy</span><span class="tag">Energy</span><span class="tag">Migration</span>
+          <span class="tag">Brussels</span><span class="tag">Net Zero</span><span class="tag">Sanctions</span>
+          <span class="tag">Asia Pacific</span><span class="tag">Africa</span><span class="tag">Conflict</span>
+        </div>
+      </div>
+
+      <form class="newsletter">
+        <h3>World Briefing</h3>
+        <p>The day's most important global stories, every morning.</p>
+        <input type="email" placeholder="Email address" required />
+        <button type="submit" class="btn"><span>Subscribe Free</span></button>
+      </form>
+    </aside>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="logo"><span class="logo-badge">R</span>RAK<span class="dot">.</span>News</a>
+          <p>Independent journalism committed to truth, speed and integrity. Reporting from over 60 countries since 2012.</p>
+          <div class="socials">
+            <a class="social" href="#"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.3 8.4L23 22h-6.8l-5.3-7-6.1 7H1.7l7.8-9L1 2h7l4.8 6.4L18.9 2z"/></svg></a>
+            <a class="social" href="#"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13 22v-8h3l1-4h-4V7.5c0-1.2.3-2 2-2h2V2.2C16.7 2.1 15.5 2 14.3 2 11.4 2 9.5 3.8 9.5 7v3H6v4h3.5v8H13z"/></svg></a>
+            <a class="social" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="about.html">About</a></li><li><a href="#">Newsroom</a></li><li><a href="#">Careers</a></li><li><a href="about.html">Contact</a></li></ul></div>
+        <div class="footer-col"><h4>Categories</h4><ul><li><a href="world.html">World</a></li><li><a href="politics.html">Politics</a></li><li><a href="business.html">Business</a></li><li><a href="tech.html">Tech</a></li></ul></div>
+        <div class="footer-col"><h4>Legal</h4><ul><li><a href="#">Terms</a></li><li><a href="#">Privacy</a></li><li><a href="#">Cookies</a></li><li><a href="#">Editorial Standards</a></li></ul></div>
+      </div>
+      <div class="footer-bottom"><span>© 2026 RAK News Media Group.</span><span>Truth · Speed · Integrity</span></div>
+    </div>
+  </footer>
+
+  <button class="back-top"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m18 15-6-6-6 6"/></svg></button>
+
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/gsap@3.12.5/dist/SplitText.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

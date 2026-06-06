@@ -1,0 +1,152 @@
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Serif+4:wght@300;400;600&family=Barlow+Condensed:wght@600;700&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+.rn-wrap{background:#0a0a0a;padding:0;overflow:hidden;font-family:'Source Serif 4',serif}
+.rn-topbar{background:#b5141e;display:flex;align-items:center;justify-content:space-between;padding:6px 28px;font-family:'Barlow Condensed',sans-serif;font-size:12px;letter-spacing:1.5px;color:#fff}
+.rn-topbar-left{display:flex;gap:18px}
+.rn-topbar-right{display:flex;gap:14px;align-items:center}
+.rn-topbar a{color:#fff;text-decoration:none;opacity:.85;transition:.2s}
+.rn-topbar a:hover{opacity:1}
+.rn-masthead{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:28px 28px 22px;border-bottom:1px solid #222;position:relative;overflow:hidden}
+.rn-masthead::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:repeating-linear-gradient(90deg,#1a1a1a 0px,#1a1a1a 1px,transparent 1px,transparent 60px);opacity:.18}
+.rn-date-line{font-family:'Barlow Condensed',sans-serif;font-size:11px;letter-spacing:2px;color:#666;text-transform:uppercase;margin-bottom:12px}
+.rn-logo-row{display:flex;align-items:center;gap:0;position:relative;z-index:1}
+.rn-logo-icon{width:56px;height:56px;margin-right:14px;flex-shrink:0}
+.rn-logo-text-block{display:flex;flex-direction:column;align-items:flex-start}
+.rn-logo-name{font-family:'Playfair Display',serif;font-size:58px;font-weight:900;color:#fff;letter-spacing:-1px;line-height:1;text-transform:uppercase}
+.rn-logo-name span{color:#b5141e}
+.rn-logo-tagline{font-family:'Barlow Condensed',sans-serif;font-size:11px;letter-spacing:4px;color:#555;text-transform:uppercase;margin-top:3px}
+.rn-logo-divider{width:1px;height:60px;background:#333;margin:0 20px}
+.rn-logo-right-text{display:flex;flex-direction:column;gap:4px}
+.rn-logo-sub{font-family:'Barlow Condensed',sans-serif;font-size:11px;letter-spacing:2px;color:#555;text-transform:uppercase}
+.rn-logo-est{font-family:'Playfair Display',serif;font-size:13px;color:#444;font-style:italic}
+.rn-nav{display:flex;align-items:center;justify-content:space-between;padding:0 28px;border-bottom:1px solid #1e1e1e}
+.rn-nav-links{display:flex}
+.rn-nav-links a{font-family:'Barlow Condensed',sans-serif;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;color:#ccc;text-decoration:none;padding:14px 16px;display:block;border-bottom:3px solid transparent;transition:.2s}
+.rn-nav-links a:hover,.rn-nav-links a.active{color:#fff;border-bottom-color:#b5141e}
+.rn-nav-links a.active{color:#b5141e}
+.rn-nav-right{display:flex;align-items:center;gap:12px}
+.rn-search-btn{background:none;border:1px solid #333;color:#888;padding:6px 12px;font-family:'Barlow Condensed',sans-serif;font-size:11px;letter-spacing:1.5px;cursor:pointer;transition:.2s;border-radius:2px}
+.rn-search-btn:hover{border-color:#b5141e;color:#fff}
+.rn-ticker-bar{background:#111;display:flex;align-items:center;overflow:hidden;border-bottom:1px solid #1e1e1e}
+.rn-ticker-label{background:#b5141e;font-family:'Barlow Condensed',sans-serif;font-size:11px;letter-spacing:2px;color:#fff;padding:8px 14px;white-space:nowrap;flex-shrink:0;text-transform:uppercase}
+.rn-ticker-track{overflow:hidden;flex:1}
+.rn-ticker-inner{display:flex;white-space:nowrap;animation:tickscroll 22s linear infinite}
+@keyframes tickscroll{0%{transform:translateX(100%)}100%{transform:translateX(-100%)}}
+.rn-ticker-item{font-family:'Source Serif 4',serif;font-size:13px;color:#bbb;padding:8px 32px 8px 0;display:inline-block}
+.rn-ticker-dot{color:#b5141e;margin-right:8px;font-size:16px}
+.rn-hero{position:relative;overflow:hidden;background:#111}
+.rn-hero-img{width:100%;height:260px;object-fit:cover;display:block;background:linear-gradient(135deg,#1a1a2e 0%,#16213e 40%,#0f3460 70%,#533483 100%);position:relative}
+.rn-hero-placeholder{width:100%;height:260px;background:linear-gradient(135deg,#1a1a2e,#0f3460,#533483);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.rn-hero-placeholder::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.85) 0%,rgba(0,0,0,.2) 60%,transparent 100%)}
+.rn-hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);background-size:40px 40px}
+.rn-hero-content{position:absolute;bottom:0;left:0;right:0;padding:24px 28px;z-index:2}
+.rn-hero-cat{font-family:'Barlow Condensed',sans-serif;font-size:11px;letter-spacing:2.5px;color:#b5141e;background:rgba(181,20,30,.12);border:1px solid rgba(181,20,30,.3);padding:3px 10px;display:inline-block;margin-bottom:10px;text-transform:uppercase}
+.rn-hero-hed{font-family:'Playfair Display',serif;font-size:26px;font-weight:700;color:#fff;line-height:1.25;margin-bottom:8px;max-width:520px}
+.rn-hero-meta{font-family:'Barlow Condensed',sans-serif;font-size:11px;letter-spacing:1px;color:#888;text-transform:uppercase}
+.rn-hero-meta span{color:#aaa}
+.rn-cards{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1px;background:#1a1a1a;border-top:1px solid #1a1a1a}
+.rn-card{background:#0d0d0d;padding:16px 20px;transition:.2s;cursor:pointer}
+.rn-card:hover{background:#111}
+.rn-card-cat{font-family:'Barlow Condensed',sans-serif;font-size:10px;letter-spacing:2px;color:#b5141e;text-transform:uppercase;margin-bottom:6px}
+.rn-card-title{font-family:'Playfair Display',serif;font-size:15px;color:#e0e0e0;line-height:1.4;margin-bottom:8px}
+.rn-card-meta{font-family:'Barlow Condensed',sans-serif;font-size:10px;color:#444;letter-spacing:1px;text-transform:uppercase}
+.rn-card-line{width:24px;height:1px;background:#b5141e;margin-bottom:8px}
+</style>
+
+<div class="rn-wrap">
+  <div class="rn-topbar">
+    <div class="rn-topbar-left">
+      <a href="#">Pakistan</a>
+      <a href="#">World</a>
+      <a href="#">Business</a>
+      <a href="#">Sports</a>
+      <a href="#">Technology</a>
+    </div>
+    <div class="rn-topbar-right">
+      <a href="#">Subscribe</a>
+      <a href="#">Sign In</a>
+    </div>
+  </div>
+
+  <div class="rn-masthead">
+    <div class="rn-date-line">Saturday, June 7, 2026 &nbsp;|&nbsp; Rawalpindi, Pakistan</div>
+    <div class="rn-logo-row">
+      <svg class="rn-logo-icon" viewBox="0 0 56 56" fill="none">
+        <rect width="56" height="56" rx="2" fill="#b5141e"/>
+        <text x="28" y="40" font-family="Playfair Display, serif" font-size="32" font-weight="900" fill="#fff" text-anchor="middle">R</text>
+        <rect x="0" y="48" width="56" height="4" fill="#8a0f17" rx="0"/>
+        <polygon points="0,0 8,0 0,8" fill="#fff" opacity="0.15"/>
+        <polygon points="56,56 48,56 56,48" fill="#fff" opacity="0.15"/>
+      </svg>
+      <div class="rn-logo-text-block">
+        <div class="rn-logo-name">RAK<span>.</span>News</div>
+        <div class="rn-logo-tagline">Truth &nbsp;·&nbsp; Speed &nbsp;·&nbsp; Integrity</div>
+      </div>
+      <div class="rn-logo-divider"></div>
+      <div class="rn-logo-right-text">
+        <div class="rn-logo-sub">Independent Journalism</div>
+        <div class="rn-logo-est">Est. 2025 — Pakistan</div>
+      </div>
+    </div>
+  </div>
+
+  <nav class="rn-nav">
+    <div class="rn-nav-links">
+      <a href="#" class="active">Home</a>
+      <a href="#">Pakistan</a>
+      <a href="#">World</a>
+      <a href="#">Business</a>
+      <a href="#">Sports</a>
+      <a href="#">Technology</a>
+      <a href="#">Opinion</a>
+      <a href="#">About</a>
+    </div>
+    <div class="rn-nav-right">
+      <button class="rn-search-btn">Search</button>
+    </div>
+  </nav>
+
+  <div class="rn-ticker-bar">
+    <div class="rn-ticker-label">Breaking</div>
+    <div class="rn-ticker-track">
+      <div class="rn-ticker-inner">
+        <span class="rn-ticker-item"><span class="rn-ticker-dot">●</span>Pakistan government announces major economic reforms package for 2026</span>
+        <span class="rn-ticker-item"><span class="rn-ticker-dot">●</span>IMF approves $3 billion loan tranche for Pakistan amid fiscal consolidation</span>
+        <span class="rn-ticker-item"><span class="rn-ticker-dot">●</span>Green Pakistan Initiative plants 10 million trees across Punjab province</span>
+        <span class="rn-ticker-item"><span class="rn-ticker-dot">●</span>PCB announces squad for upcoming Asia Cup cricket tournament</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="rn-hero-placeholder">
+    <div class="rn-hero-grid"></div>
+    <div class="rn-hero-content">
+      <div class="rn-hero-cat">World</div>
+      <div class="rn-hero-hed">Global Leaders Convene in Geneva for Historic Climate Summit on Carbon Emissions</div>
+      <div class="rn-hero-meta"><span>RAK News Bureau</span> &nbsp;·&nbsp; 2 hours ago &nbsp;·&nbsp; 4 min read</div>
+    </div>
+  </div>
+
+  <div class="rn-cards">
+    <div class="rn-card">
+      <div class="rn-card-cat">Pakistan</div>
+      <div class="rn-card-line"></div>
+      <div class="rn-card-title">Senate passes landmark digital rights protection bill unanimously</div>
+      <div class="rn-card-meta">3 hours ago</div>
+    </div>
+    <div class="rn-card">
+      <div class="rn-card-cat">Business</div>
+      <div class="rn-card-line"></div>
+      <div class="rn-card-title">PSX hits record high as foreign investment surges 40% in Q1</div>
+      <div class="rn-card-meta">5 hours ago</div>
+    </div>
+    <div class="rn-card">
+      <div class="rn-card-cat">Sports</div>
+      <div class="rn-card-line"></div>
+      <div class="rn-card-title">Pakistan defeats India by 7 wickets in thrilling T20 final</div>
+      <div class="rn-card-meta">1 hour ago</div>
+    </div>
+  </div>
+</div>
